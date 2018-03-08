@@ -8,6 +8,7 @@ import {GitHubUserComponent} from './github.user.component'
 export const routing = RouterModule.forRoot([
     {path:'', component:HomeComponent},
     {path:'GitHub', component:GitHubComponent},
-    {path:'**', component:NotFoundComponent},
-    {path:'GitHub/user/:login/:score', component:GitHubUserComponent}
+    {path:'GitHub/user/:login/:score', component:GitHubUserComponent},
+    {path:'**', component:NotFoundComponent}
+    
 ])
