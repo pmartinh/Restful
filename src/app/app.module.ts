@@ -10,6 +10,7 @@ import { GitHubComponent } from './github.component';
 import { NotFoundComponent } from './notfound.component';
 import { routing } from './app.routing';
 import { GitHubUserComponent } from './github.user.component';
+import { AuthGuard } from './auth-guard.service';
 
 
 @NgModule({
@@ -19,7 +20,7 @@ import { GitHubUserComponent } from './github.user.component';
   imports: [
     BrowserModule,HttpModule,ReactiveFormsModule,routing
   ],
-  providers: [],
+  providers: [AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

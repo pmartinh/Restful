@@ -5,6 +5,7 @@ import 'rxjs/add/operator/debounceTime';
 import 'rxjs/add/operator/distinctUntilChanged';
 import { FormControl } from '@angular/forms'; 
 import { GitHubService } from './github.service'; 
+import { AuthGuard } from './auth-guard.service';
 
 @Component({
   selector: 'app-root',  
