@@ -3,9 +3,11 @@ import {Routes, RouterModule} from '@angular/router';
 import {HomeComponent} from './home.component';
 import {NotFoundComponent} from './notfound.component';
 import {GitHubComponent} from './github.component';
+import {GitHubUserComponent} from './github.user.component'
 
 export const routing = RouterModule.forRoot([
     {path:'', component:HomeComponent},
     {path:'GitHub', component:GitHubComponent},
-    {path:'**', component:NotFoundComponent}
+    {path:'**', component:NotFoundComponent},
+    {path:'GitHub/user/:login/:score', component:GitHubUserComponent}
 ])
