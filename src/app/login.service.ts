@@ -6,8 +6,9 @@ export class LoginService {
     login(username,password){
         if(username=="patri" && password=="simone")  this.isLogged=true;
         else  this.isLogged=false;
-
+        console.log(this.isLogged);
         return this.isLogged;
+        
     }
 
     logout(){
