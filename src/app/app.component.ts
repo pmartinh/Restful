@@ -40,7 +40,7 @@ routerLinkActive="active">GitHub</a></li>
     
 })
 export class AppComponent {
-
+//comentario de prueba hecho en master local
   constructor(){
   }
 
